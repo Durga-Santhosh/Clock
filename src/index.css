@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(88, 236, 238);
+    font-family: "Orbitron", serif;
+    z-index: 5;
+}
+main{
+    height: 710px;
+    width: 100%;
+    display: flex;
+}
+aside{
+    height: 100%;
+    width: 20%;
+    color: rgb(245, 242, 242);
+    background-color: black;
+    font-family: "Orbitron", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 2px 1px 0 rgb(88, 236, 238);
+    z-index: 3;
+
+    
+}
+.mainnames{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.name{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.mainnames p{
+ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(88, 236, 238);
+    text-align: center;
+
+}
+.mainnames p:hover{
+    background-color: #4a4a4a;
+    transition: all 0.5s;
+    border-radius: 0;
+}
+Clock{
+    height: 100%;
+    width: 70%;
+    background-color: black;
+    color: aliceblue;
+}
+.menuicon{
+    position:absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+    
+}
+.menuicon svg{
+       fill:azure;
+}
+.menuitems{
+    height: 300px;
+    width: 200px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    color: azure;
+    /* right: 20px; */
+    right: 0px;
+    top: 70px;
+
+}
+.menuitems p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.menuitems p:hover{
+    background-color: #4a4a4a;
+    transition: all 0.5s;
+    border-radius: 0;
+}
+.menuitems.visible {
+    display: flex;
+  }
+
+@media screen and (max-width: 768px){
+    aside{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .menuitems{
+        height: 200px;
+    }
+    .menuicon{
+        display: block;
+    }
+    
+}
+
